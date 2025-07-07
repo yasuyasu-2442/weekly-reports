@@ -29,39 +29,68 @@
         </div>
 
         <!-- 1. 売上と利益の全体概要 -->
-        <h2>1. 全体サマリー</h2>
+        <h2>1. 週間サマリー (6/28-7/4)</h2>
         <div class="summary-card text-center">
             <div class="row">
-                <div class="col-md-3"><h5>売上</h5><p>前年比: <span class="text-success">105.7%</span> | 予算比: <span class="text-danger">99.4%</span></p></div>
-                <div class="col-md-3"><h5>粗利</h5><p>前年比: <span class="text-success">103.2%</span> | 予算比: <span class="text-danger">96.7%</span></p></div>
-                <div class="col-md-3"><h5>客数</h5><p>前年比: <span class="text-danger">97.5%</span></p></div>
-                <div class="col-md-3"><h5>客単価</h5><p>前年比: <span class="text-success">108.4%</span></p></div>
+                <div class="col"><h5>売上</h5><p>前年比: <span class="text-success">105.7%</span> | 予算比: <span class="text-danger">99.4%</span></p></div>
+                <div class="col"><h5>粗利</h5><p>前年比: <span class="text-success">103.2%</span> | 予算比: <span class="text-danger">96.7%</span></p></div>
+                <div class="col"><h5>客数</h5><p>前年比: <span class="text-danger">97.5%</span></p></div>
+                <div class="col"><h5>客単価</h5><p>前年比: <span class="text-success">108.4%</span></p></div>
+                <div class="col"><h5>人時生産性</h5><p>前年比: <span class="text-success">103.9%</span></p></div>
             </div>
         </div>
 
-        <!-- 2. 店舗別の売上と利益の表 -->
-        <h2>2. 店舗別実績 (トップ5)</h2>
+        <!-- 2. 店舗別実績（週間） -->
+        <h2>2. 店舗別実績 (週間)</h2>
         <div class="table-responsive">
-            <table class="table table-striped table-hover table-bordered">
+            <table class="table table-striped table-hover table-bordered table-sm">
                 <thead class="table-dark">
-                    <tr><th>店舗名</th><th>売上(円)</th><th>売上前年比</th><th>売上予算比</th><th>粗利(円)</th></tr>
+                    <tr><th>店舗名</th><th>売上(円)</th><th>売上前年比</th><th>売上予算比</th><th>粗利(円)</th><th>粗利率</th><th>客数</th><th>客単価</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>P.錦糸町</td><td>5,184,203</td><td class="text-success">107.6%</td><td class="text-success">115.2%</td><td>2,189,965</td></tr>
-                    <tr><td>P.橋本</td><td>4,816,208</td><td class="text-danger">88.8%</td><td class="text-danger">97.4%</td><td>982,150</td></tr>
-                    <tr><td>P.豊洲</td><td>1,940,491</td><td class="text-danger">91.7%</td><td class="text-danger">93.3%</td><td>876,362</td></tr>
-                    <tr><td>Sk.新所沢</td><td>1,933,745</td><td class="text-success">105.7%</td><td class="text-success">179.1%</td><td>820,087</td></tr>
-                    <tr><td>P.八尾</td><td>1,635,888</td><td class="text-danger">92.5%</td><td class="text-danger">87.0%</td><td>758,360</td></tr>
+                    <tr><td>P.錦糸町</td><td>5,184,203</td><td class="text-success">107.6%</td><td class="text-success">115.2%</td><td>2,189,965</td><td>42.2%</td><td>637</td><td>8,138</td></tr>
+                    <tr><td>P.橋本</td><td>4,816,208</td><td class="text-danger">88.8%</td><td class="text-danger">97.4%</td><td>982,150</td><td>40.6%</td><td>455</td><td>4,538</td></tr>
+                    <tr><td>P.豊洲</td><td>1,940,491</td><td class="text-danger">91.7%</td><td class="text-danger">93.3%</td><td>876,362</td><td>45.2%</td><td>313</td><td>6,199</td></tr>
+                    <tr><td>Sk.新所沢</td><td>1,933,745</td><td class="text-success">105.7%</td><td class="text-success">179.1%</td><td>820,087</td><td>42.4%</td><td>176</td><td>10,987</td></tr>
+                    <tr><td>P.八尾</td><td>1,635,888</td><td class="text-danger">92.5%</td><td class="text-danger">87.0%</td><td>758,360</td><td>46.4%</td><td>281</td><td>5,821</td></tr>
+                    <tr><td>P.東所沢</td><td>1,537,236</td><td class="text-success">190.0%</td><td class="text-success">155.3%</td><td>527,978</td><td>34.3%</td><td>364</td><td>4,223</td></tr>
+                    <tr><td>P.杉田</td><td>1,411,736</td><td class="text-success">273.2%</td><td class="text-success">162.3%</td><td>544,418</td><td>38.6%</td><td>345</td><td>4,091</td></tr>
+                    <tr><td>P.府中</td><td>1,385,661</td><td class="text-success">251.6%</td><td class="text-danger">93.6%</td><td>590,075</td><td>42.6%</td><td>276</td><td>5,020</td></tr>
+                    <tr><td>P.アリオ葛西</td><td>1,385,039</td><td class="text-success">127.4%</td><td class="text-danger">75.7%</td><td>622,710</td><td>45.0%</td><td>223</td><td>6,210</td></tr>
+                    <tr><td>P.岩槻</td><td>1,117,998</td><td class="text-success">105.7%</td><td class="text-success">101.2%</td><td>509,947</td><td>45.6%</td><td>255</td><td>4,384</td></tr>
+                    <tr><td>P.笹塚</td><td>1,096,126</td><td class="text-danger">84.1%</td><td class="text-danger">87.0%</td><td>520,473</td><td>47.5%</td><td>237</td><td>4,625</td></tr>
+                    <tr><td>P.新都心</td><td>1,034,626</td><td class="text-danger">84.8%</td><td class="text-danger">88.4%</td><td>474,610</td><td>45.9%</td><td>179</td><td>5,780</td></tr>
+                    <tr><td>P.赤羽</td><td>1,022,094</td><td class="text-danger">75.4%</td><td class="text-danger">78.6%</td><td>447,256</td><td>43.8%</td><td>210</td><td>4,867</td></tr>
+                    <tr><td>P.鳳</td><td>994,797</td><td class="text-danger">91.4%</td><td class="text-danger">77.7%</td><td>438,433</td><td>44.1%</td><td>207</td><td>4,805</td></tr>
+                    <tr><td>P.L八尾</td><td>981,869</td><td class="text-success">133.1%</td><td class="text-success">109.1%</td><td>439,196</td><td>44.7%</td><td>178</td><td>5,516</td></tr>
+                    <tr><td>P.長津田</td><td>929,658</td><td class="text-danger">79.8%</td><td class="text-danger">82.8%</td><td>433,225</td><td>46.6%</td><td>208</td><td>4,469</td></tr>
+                    <tr><td>P.狛江</td><td>918,347</td><td class="text-danger">83.1%</td><td class="text-danger">80.6%</td><td>434,499</td><td>47.3%</td><td>185</td><td>4,964</td></tr>
+                    <tr><td>P.愛川</td><td>866,327</td><td class="text-danger">81.7%</td><td class="text-danger">81.7%</td><td>381,638</td><td>44.1%</td><td>225</td><td>3,850</td></tr>
+                    <tr><td>P.川越</td><td>793,180</td><td class="text-success">111.0%</td><td class="text-success">106.5%</td><td>373,173</td><td>47.0%</td><td>178</td><td>4,456</td></tr>
+                    <tr><td>P.西国分寺</td><td>698,739</td><td class="text-danger">97.1%</td><td class="text-danger">94.7%</td><td>331,921</td><td>47.5%</td><td>163</td><td>4,286</td></tr>
+                    <tr><td>P.天美</td><td>672,640</td><td class="text-success">100.3%</td><td class="text-danger">63.8%</td><td>306,112</td><td>45.5%</td><td>126</td><td>5,338</td></tr>
                 </tbody>
             </table>
         </div>
 
-        <!-- 3. 部門別の予算達成度の棒グラフ -->
-        <h2>3. 部門別 予算達成率</h2>
+        <!-- 3. 月間サマリー -->
+        <h2>3. 月間サマリー (6/21-7/6)</h2>
+        <div class="summary-card text-center">
+            <div class="row">
+                <div class="col"><h5>売上</h5><p>前年比: <span class="text-danger">98.0%</span> | 予算比: <span class="text-danger">98.1%</span></p></div>
+                <div class="col"><h5>粗利</h5><p>前年比: <span class="text-danger">95.4%</span> | 予算比: <span class="text-danger">95.6%</span></p></div>
+                <div class="col"><h5>客数</h5><p>前年比: <span class="text-danger">89.3%</span></p></div>
+                <div class="col"><h5>客単価</h5><p>前年比: <span class="text-success">109.8%</span></p></div>
+                <div class="col"><h5>人時生産性</h5><p>前年比: <span class="text-danger">99.4%</span></p></div>
+            </div>
+        </div>
+
+        <!-- 4. 部門別予算達成度 -->
+        <h2>4. 部門別 予算達成率 (月間)</h2>
         <canvas id="departmentChart"></canvas>
 
-        <!-- 4. 個別売上のランキング -->
-        <h2>4. 個人売上ランキング (3部門計)</h2>
+        <!-- 5. 個人売上ランキング -->
+        <h2>5. 個人売上ランキング (月間3部門計)</h2>
         <div class="table-responsive">
             <table class="table table-sm table-bordered">
                 <thead class="table-info">
@@ -71,15 +100,39 @@
                     <tr><td>1</td><td>加山 征光</td><td>151003</td><td>1</td><td>3</td><td>5</td></tr>
                     <tr><td>2</td><td>駄場中 翔音</td><td>182005</td><td>22</td><td>65</td><td>7</td></tr>
                     <tr><td>3</td><td>鷲林 希美</td><td>247017</td><td>10</td><td>21</td><td>19</td></tr>
+                    <tr><td>4</td><td>渡辺 智子</td><td>167025</td><td>28</td><td>19</td><td>6</td></tr>
+                    <tr><td>5</td><td>平塚 みゆき</td><td>237006</td><td>33</td><td>60</td><td>4</td></tr>
+                    <tr><td>6</td><td>志原 哲也</td><td>72042</td><td>30</td><td>17</td><td>13</td></tr>
+                    <tr><td>7</td><td>木本 三紗</td><td>247002</td><td>20</td><td>10</td><td>24</td></tr>
+                    <tr><td>8</td><td>重松 麻衣子</td><td>197069</td><td>43</td><td>46</td><td>2</td></tr>
+                    <tr><td>9</td><td>小川 正</td><td>2130</td><td>27</td><td>4</td><td>18</td></tr>
+                    <tr><td>10</td><td>松田 啓子</td><td>102012</td><td>24</td><td>74</td><td>22</td></tr>
                 </tbody>
             </table>
         </div>
 
-        <!-- 5. 顧客からのフィードバックと競合他社の動向の概要 -->
-        <h2>5. 市場動向サマリー</h2>
+        <!-- 6. プラスONEランキング -->
+        <h2>6. プラスONE 個人数値 (6/21-7/4)</h2>
+        <div class="table-responsive">
+            <table class="table table-sm table-bordered">
+                <thead class="table-primary">
+                    <tr><th>順位</th><th>名前</th><th>比率</th><th>客数</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>白居 大興</td><td>36.1%</td><td>52</td></tr>
+                    <tr><td>2</td><td>重松 麻衣子</td><td>28.0%</td><td>14</td></tr>
+                    <tr><td>3</td><td>有田 剛</td><td>27.2%</td><td>22</td></tr>
+                    <tr><td>4</td><td>平塚 みゆき</td><td>26.7%</td><td>12</td></tr>
+                    <tr><td>5</td><td>加山 征光</td><td>25.6%</td><td>22</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 7. 市場動向サマリー -->
+        <h2>7. 市場動向サマリー</h2>
         <div class="row">
             <div class="col-md-6">
-                <h3>6. お客様の声</h3>
+                <h3>お客様の声</h3>
                 <ul class="customer-feedback">
                     <li>「軽くて履きやすい」「幅広で楽」といった履き心地の良さが好評。</li>
                     <li>外反母趾や扁平足の悩みを抱える顧客にアシマルインソールとの組み合わせ提案が成功し、「楽になった」「痛みが軽減された」との声多数。</li>
@@ -88,7 +141,7 @@
                 </ul>
             </div>
             <div class="col-md-6">
-                <h3>7. ライバル情報</h3>
+                <h3>ライバル情報</h3>
                 <ul class="market-trends">
                     <li><strong>ABCマート:</strong> 「SUPER SUMMER SALE」を大規模に展開。ケツメイシの新曲を起用したTVCMを放映。</li>
                     <li><strong>チヨダ:</strong> 新規出店と連動したオープニングセールを実施。公式アプリ会員限定の割引も提供。</li>
